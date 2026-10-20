@@ -33,3 +33,6 @@ scripts/
 
 # Claude Code local config
 .claude/
+
+# Wrangler local state
+.wrangler/

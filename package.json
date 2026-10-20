@@ -19,7 +19,9 @@
     "lint": "next lint",
     "check-links": "node scripts/check-links.mjs",
     "check-contrast": "node scripts/check-contrast.cjs --audit",
-    "assets": "node scripts/optimize-assets.cjs"
+    "assets": "node scripts/optimize-assets.cjs",
+    "preview": "next build && wrangler dev",
+    "deploy": "next build && wrangler deploy"
   },
   "browserslist": {
     "production": [
@@ -34,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "wrangler": "4.151.3"
   }
 }
