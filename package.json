@@ -21,7 +21,8 @@
     "check-contrast": "node scripts/check-contrast.cjs --audit",
     "assets": "node scripts/optimize-assets.cjs",
     "preview": "next build && wrangler dev",
-    "deploy": "next build && wrangler deploy"
+    "deploy": "next build && wrangler deploy",
+    "postbuild": "node flatten-segment-data.mjs"
   },
   "browserslist": {
     "production": [
