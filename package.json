@@ -20,8 +20,8 @@
     "check-links": "node scripts/check-links.mjs",
     "check-contrast": "node scripts/check-contrast.cjs --audit",
     "assets": "node scripts/optimize-assets.cjs",
-    "preview": "next build && wrangler dev",
-    "deploy": "next build && wrangler deploy",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
     "postbuild": "node flatten-segment-data.mjs"
   },
   "browserslist": {
