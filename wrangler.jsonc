@@ -11,7 +11,11 @@
     "html_handling": "force-trailing-slash",
     "not_found_handling": "404-page"
   },
+  // research.calvada.com is the address; research.calvada-webhooks.com is the
+  // old one, kept until a redirect rule sends it to the new address. Both are
+  // behind the Access app "Calvada Research" (Calvada employees only).
   "routes": [
+    { "pattern": "research.calvada.com", "custom_domain": true },
     { "pattern": "research.calvada-webhooks.com", "custom_domain": true }
   ],
   // Only the custom domain serves the site; no *.workers.dev or preview URLs.
